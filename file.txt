@@ -1,0 +1,196 @@
+benarkan html nya dan atur agar si article css nya ga tersambung sama yang section, dan juga buat si container-project di css nya sebagai parent, buat agar card tidak memiliki gap yang panjang atau lebar 
+
+<div class="container-project" role="main">
+    <div class="project-bar" aria-label="Crypto learning navigation">
+      <button class="project-button active" aria-label="Learn Crypto">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        Learn Crypto
+      </button>
+      <button class="project-button" aria-label="Let's Earn">
+        <i class="fas fa-sync-alt" aria-hidden="true"></i>
+        Let's Earn
+      </button>
+      <button class="project-button" aria-label="How To Trade">
+        <i class="far fa-image" aria-hidden="true"></i>
+        How To Trade
+      </button>
+      <button class="project-button" aria-label="Build Portfolio">
+        <i class="fas fa-th-large" aria-hidden="true"></i>
+        Build Portfolio
+      </button>
+    </div>
+  
+    <section class="cards" aria-label="Crypto learning cards">
+      <!-- Ulangi struktur card -->
+      <article class="card">
+        <h3>Let’s learn how cryptocurrency works?</h3>
+        <p>Access A Robust Trading Platform<br>Offering Real-Time Data.</p>
+        <button aria-label="Learn More">Learn More</button>
+      </article>
+  
+      <!-- Copy card sesuai jumlah yang diinginkan -->
+      <article class="card">
+        <h3>Let’s learn how cryptocurrency works?</h3>
+        <p>Access A Robust Trading Platform<br>Offering Real-Time Data.</p>
+        <button aria-label="Learn More">Learn More</button>
+      </article>
+  
+      <article class="card">
+        <h3>Let’s learn how cryptocurrency works?</h3>
+        <p>Access A Robust Trading Platform<br>Offering Real-Time Data.</p>
+        <button aria-label="Learn More">Learn More</button>
+      </article>
+  
+      <article class="card">
+        <h3>Let’s learn how cryptocurrency works?</h3>
+        <p>Access A Robust Trading Platform<br>Offering Real-Time Data.</p>
+        <button aria-label="Learn More">Learn More</button>
+      </article>
+  
+      <article class="card">
+        <h3>Let’s learn how cryptocurrency works?</h3>
+        <p>Access A Robust Trading Platform<br>Offering Real-Time Data.</p>
+        <button aria-label="Learn More">Learn More</button>
+      </article>
+  
+    </section>
+  </div>
+
+
+ini css nya 
+
+ /* Project Section */
+  .project-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  
+  .project-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 24px;
+    padding: 24px;
+    width: 120px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
+    background-color: #0f171f;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .project-button i {
+    font-size: 20px;
+    color: #00c78a;
+  }
+  
+  .project-button:hover {
+    background-color: #00c78a;
+    color: #000;
+  }
+  
+  .project-button:hover i {
+    color: #000;
+  }
+  
+  .project-button.active {
+    border: 1px solid #00c78a;
+    color: #00c78a;
+    background-color: transparent;
+  }
+  
+  .project-button.active i {
+    color: #00c78a;
+  }
+  
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+  
+  .card {
+    background-color: #0f171f;
+    border-radius: 24px;
+    padding: 24px;
+    max-width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 199, 138, 0.2);
+  }
+  
+  .card h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .card p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+    white-space: pre-line;
+  }
+  
+  .card button {
+    border: 1px solid #00c78a;
+    background-color: transparent;
+    color: #00c78a;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #00c78a;
+    color: #000;
+  }
+  
+/* Responsive */
+@media (max-width: 1024px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr); /* Tablet: 2 kolom */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .cards {
+      grid-template-columns: 1fr; /* HP: 1 kolom menurun */
+      gap: 16px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: none;
+      padding: 20px;
+    }
+  
+    .project-button {
+      width: 100px;
+      padding: 20px 16px;
+      font-size: 11px;
+    }
+  }
+ChatGPT said:
+
