@@ -65,6 +65,14 @@ header .logo span {
 }
 
 /* Navbar */
+.navbar{
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
 .navbar a {
   position: relative;
   font-size: 20px;
