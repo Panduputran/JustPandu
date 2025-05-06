@@ -638,8 +638,9 @@ header .logo span {
   }
 
   .navbar{
-    width: auto;
+    width: 991px;
   }
+  
 
 
   .education {
