@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Panduptra.n</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="assets/hugeicons/hugeicons-font.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -44,36 +53,32 @@
     </p>
   </header>
 
-  <!-- Hero Section -->
-  <main class="relative max-w-5xl mx-auto px-4 pt-[120px] pb-32 text-center min-h-[calc(100vh-96px)] overflow-hidden">
-    <!-- Coin Images -->
-    <img src="Image/icons8-css-96.png" class="coin1 coin-icon absolute top-[20%] left-4 sm:left-6" alt="Coin 1" />
-    <img src="Image/icons8-html-96.png" class="coin2 coin-icon absolute top-[50%] left-4 sm:left-12" alt="Coin 2" />
-    <img src="Image/icons8-javascript-96.png" class="coin3 coin-icon absolute top-[20%] right-4 sm:right-6" alt="Coin 3" />
-    <img src="Image/icons8-python-96.png" class="coin4 coin-icon absolute top-[50%] right-4 sm:right-12" alt="Coin 4" />
-
-    <!-- Title & Description -->
-    <div class="main-title px-2">
-      <h1 class="text-white font-extrabold text-3xl md:text-5xl leading-tight max-w-3xl mx-auto">
-        Welcome To My <br /> Website
-      </h1>
-      <p class="text-white/80 mt-4 max-w-md mx-auto text-base">
-        A Junior Computer Science Student Based In Bogor, Indonesia <br />
-        Turning Ideas Into Something Useful
+  <section class="home fade-bottom" id="home">
+    <div class="home-content fade-in-left delay-5">
+      <h1>Hi, I'm <span>Pandu</span></h1>
+      <h3 class="fade-in delay-1">I'm a 
+        <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
+        <span style="--i:3;" data-text="UI / Ux Designer">UI / Ux Designer</span>
+        <span style="--i:2;" data-text="Game Developer">Game Developer</span>
+        <span style="--i:1;" data-text="Photographer">Photographer</span>
+      </h3>
+      <p class="fade-in delay-3">
+        Welcome To My Personal Website,<br>I'm Pandu Putra Nurasih – A Future Fullstack Developer<br>Based In Bogor, Indonesia
       </p>
-    </div>
-
-    <!-- Action Buttons -->
-    <div class="button-title mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-      <button class="bg-[#00ff9f] text-black font-bold rounded-full px-8 py-3 hover:brightness-110 w-full sm:w-auto">
-        Get Started
-      </button>
-      <button class="border border-[#00ff9f] text-[#00ff9f] font-semibold rounded-full px-8 py-3 hover:bg-[#00ff9f] hover:text-black w-full sm:w-auto">
+      <div class="social-icons fade-in delay-4">
+        <a href="https://www.linkedin.com/in/pandu-putra-nurasih-404a52331/"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="https://www.instagram.com/panduptra.n/"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+      </div>
+      <div class="btn-group fade-in delay-5">
         <a href="document/CV Pandu PDF.pdf" class="btn" download="document/CV Pandu PDF.pdf">Download CV</a>
-      </button>
+        <a href="#contact"><i class="fa-solid fa-arrow-down"></i> Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
     </div>
-  </main>
-
+  </section>
+  
+ 
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const menu = document.getElementById('menu');
@@ -82,21 +87,21 @@
     });
   </script>
 
- <!-- Project Section -->
+ <!-- About Me Section -->
 <section class="project-section text-center px-4 py-20 max-w-6xl mx-auto">
   <!-- Section Header -->
   <button class="btn-small">About Me</button>
 
   <h1 class="text-3xl font-bold mt-4 mb-2">Get To Know About Me.</h1>
   <p class="description text-white/80 text-sm mb-10">
-    Before You Know About Me <br />
+    If You Want To Know About Me <br />
     I Think You Need To Scroll Down
   </p>
 
   <!-- Feature Buttons -->
   <div class="card-grid grid grid-cols-2 sm:grid-cols-4 gap-6 justify-center mb-16">
     <button class="card-btn" aria-pressed="true">
-      <i class="fas fa-graduation-cap text-2xl"></i>
+      <i class="fa-solid fa-laptop"></i>
       <span>IT Enthusiast</span>
     </button>
     <button class="card-btn" aria-pressed="false">
@@ -142,15 +147,15 @@
 
 <section class="faq-grid grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-x-16 sm:gap-y-10 max-w-6xl mx-auto px-4 sm:px-6">
   <article class="faq-item">
-    <h2 class="faq-question">What Is Your Full Name?</h2>
+    <h2 class="faq-question">Full Name</h2>
     <p class="faq-answer">
-     My Name Is Pandu Putra Nurasih
+     Pandu Putra Nurasih
     </p>
     <hr />
   </article>
 
   <article class="faq-item">
-    <h2 class="faq-question">Where Are You From?</h2>
+    <h2 class="faq-question">Location</h2>
     <p class="faq-answer">
       I'm From Bogor, Indonesia
     </p>
@@ -158,7 +163,7 @@
   </article>
 
   <article class="faq-item">
-    <h2 class="faq-question">How Old Are You?</h2>
+    <h2 class="faq-question">How Old I Am</h2>
     <p class="faq-answer">
      I was born on april 6, 2009, So This Year I'm Turning 16.
     </p>
