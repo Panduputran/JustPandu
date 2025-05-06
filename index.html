@@ -36,8 +36,9 @@
     </button>
 
     <!-- Navigation Menu -->
-    <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-gray-800 text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:bg-transparent md:py-0 md:text-left md:w-auto">
-      <a href="#home" class="block md:inline font-semibold">Home</a>
+    <nav id="menu" class="hidden flex-col absolute top-full left-0 right-0 bg-gray-800 text-white text-center space-y-4 py-4 px-6 
+    md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:bg-transparent md:py-0 md:text-left md:w-auto md:px-0">
+    
       <a href="#about" class="block md:inline hover:text-white">About</a>
       <a href="#project" class="block md:inline hover:text-white">Project</a>
       <a href="#license" class="block md:inline hover:text-white">License</a>
@@ -91,14 +92,15 @@
     </div>
   </section>
   
- 
   <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+  
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
     });
   </script>
+  
 
  <!-- About Me Section -->
 <section class="project-section text-center px-4 py-20 max-w-6xl mx-auto" id="about">
