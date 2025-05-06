@@ -196,12 +196,23 @@
 
   <!-- Informational Cards -->
   <div class="content-section grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" id="project">
+    
+    <div class="card p-6 rounded-xl bg-[#121a22] text-center">
+    
+      <h2 class="text-lg font-semibold mb-2">Certificate</h2>
+      <p class="text-sm text-white/70 mb-4">See My Certificate</p>
+      <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
+        See
+      </button>
+    </div>
+
+    
     <div class="card p-6 rounded-xl bg-[#121a22] text-center">
       <img src="/Image/AmaliahSmartschool.jpg" alt="Crypto Learning" class="card-img mx-auto mb-4 rounded-lg" />
       <h2 class="text-lg font-semibold mb-2">Amaliah Smartschool</h2>
       <p class="text-sm text-white/70 mb-4">The Smart Solution for Efficient and Easy Learning Access.</p>
       <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
-        Find My Project
+        Go To Project
       </button>
     </div>
     <div class="card p-6 rounded-xl bg-[#121a22] text-center">
@@ -209,7 +220,7 @@
       <h2 class="text-lg font-semibold mb-2">School Boy Striker : Alien Invasion</h2>
       <p class="text-sm text-white/70 mb-4">Building Game In 54Hours Marathon</p>
       <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
-        Find My Project
+        Go To Project
       </button>
     </div>
     <div class="card p-6 rounded-xl bg-[#121a22] text-center">
@@ -217,13 +228,18 @@
       <h2 class="text-lg font-semibold mb-2">Coming Soon...</h2>
       <p class="text-sm text-white/70 mb-4">Fluent And Fast</p>
       <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
-        Find My Project
+        Go To Project
       </button>
     </div>
+
   </div>
 </section>
 
+
+
+
 <!-- Education Section -->
+ <!--
 <section class="education reveal fade-bottom" id="education">
   <h4 class="fade-in">Some Of</h4>
   <h2 class="fade-in delay-1">My Certificate</h2>
@@ -372,9 +388,64 @@
     </div>
   </div>
 </section>
+-->
 
 
+<!-- Section: Contact -->
+<section id="contact" class="contact-section relative z-10 py-20 px-6 md:px-20 bg-[#0f1617]">
+  <div class="max-w-6xl mx-auto bg-[#0f1617] rounded-lg p-10 md:p-16 flex flex-col md:flex-row gap-12 md:gap-24">
+    
+    <!-- Left Side -->
+    <div class="flex flex-col justify-center flex-1 max-w-lg">
+      <h2 class="text-[#00ffb0] font-extrabold text-2xl md:text-3xl leading-tight mb-4">
+        Start Collaboration With Me 
+      </h2>
+      <p class="text-[#8a8f8f] text-sm md:text-base leading-relaxed max-w-md">
+        Let's Turning Idea To Something<br />
+        Useful
+      </p>
 
+      <div class="flex space-x-8 mt-12 text-white text-xl">
+        <a href="#" class="hover:text-[#00ffb0] transition-colors duration-300"><i class="fab fa-github"></i></a>
+        <a href="#" class="hover:text-[#00ffb0] transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-[#00ffb0] transition-colors duration-300"><i class="fab fa-skype"></i></a>
+        <a href="#" class="hover:text-[#00ffb0] transition-colors duration-300"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <form class="flex flex-col flex-1 max-w-md space-y-6">
+      <div class="flex flex-col">
+        <label for="email" class="text-xs text-white mb-2">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Email Address"
+          class="bg-[#1a2223] rounded-md text-xs placeholder:text-[#4a5555] text-white py-3 px-4 focus:outline-none"
+          required
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="topic" class="text-xs text-white mb-2">Discussion Topic</label>
+        <textarea
+          id="topic"
+          rows="4"
+          placeholder="Enter The Discussion Topic"
+          class="bg-[#1a2223] rounded-md text-xs placeholder:text-[#4a5555] text-white py-3 px-4 resize-none focus:outline-none"
+          required
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="bg-[#00ffb0] text-black font-extrabold text-xs py-3 rounded-full w-max px-8 hover:brightness-110 transition"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
 
 
 

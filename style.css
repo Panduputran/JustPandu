@@ -669,3 +669,19 @@ header .logo span {
  
   }
 
+
+  .contact-section {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .contact-section h2,
+  .contact-section p {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-section form input,
+  .contact-section form textarea {
+    font-family: 'Poppins', sans-serif;
+  }
+  
