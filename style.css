@@ -89,6 +89,51 @@ header .logo span {
   color: #00ff9f;
 }
 
+.icon-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.icon-background i {
+  position: absolute;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.295); /* gelap & transparan */
+  animation: floatIcon 20s linear infinite;
+}
+
+/* Posisi acak ikon */
+.icon-background i:nth-child(1) { top: 10%; left: 5%; }
+.icon-background i:nth-child(2) { top: 30%; left: 15%; }
+.icon-background i:nth-child(3) { top: 50%; left: 80%; }
+.icon-background i:nth-child(4) { top: 70%; left: 25%; }
+.icon-background i:nth-child(5) { top: 20%; left: 65%; }
+.icon-background i:nth-child(6) { top: 80%; left: 50%; }
+.icon-background i:nth-child(7) { top: 60%; left: 10%; }
+.icon-background i:nth-child(8) { top: 40%; left: 40%; }
+
+/* Animasi lembut melayang */
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-20px) rotate(360deg);
+  }
+}
+
+/* Pastikan konten utama di atas background */
+.home {
+  position: relative;
+  z-index: 1;
+}
+
+
 /* Home Page Scoped Styles - Responsive */
 
 .home {

@@ -37,11 +37,11 @@
 
     <!-- Navigation Menu -->
     <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-gray-800 text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:bg-transparent md:py-0 md:text-left md:w-auto">
-      <a href="#" class="block md:inline font-semibold">Home</a>
-      <a href="#" class="block md:inline hover:text-white">About</a>
-      <a href="#" class="block md:inline hover:text-white">Project</a>
-      <a href="#" class="block md:inline hover:text-white">License</a>
-      <a href="#" class="block md:inline hover:text-white">Gallery</a>
+      <a href="#home" class="block md:inline font-semibold">Home</a>
+      <a href="#about" class="block md:inline hover:text-white">About</a>
+      <a href="#project" class="block md:inline hover:text-white">Project</a>
+      <a href="#license" class="block md:inline hover:text-white">License</a>
+      <a href="#gallery" class="block md:inline hover:text-white">Gallery</a>
       <p class="block md:hidden bg-[#00ff9f] text-black font-bold rounded-full px-6 py-2 mx-auto w-40">
         Contact
       </p>
@@ -54,6 +54,19 @@
   </header>
 
   <section class="home fade-bottom" id="home">
+    <!-- Background icons layer -->
+    <div class="icon-background">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js-square"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-node-js"></i>
+      <i class="fab fa-python"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-figma"></i>
+    </div>
+  
+    <!-- Foreground content -->
     <div class="home-content fade-in-left delay-5">
       <h1>Hi, I'm <span>Pandu</span></h1>
       <h3 class="fade-in delay-1">I'm a 
@@ -88,7 +101,7 @@
   </script>
 
  <!-- About Me Section -->
-<section class="project-section text-center px-4 py-20 max-w-6xl mx-auto">
+<section class="project-section text-center px-4 py-20 max-w-6xl mx-auto" id="about">
   <!-- Section Header -->
   <button class="btn-small">About Me</button>
 
@@ -180,7 +193,7 @@
 </section>
 
   <!-- Informational Cards -->
-  <div class="content-section grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="content-section grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" id="project">
     <div class="card p-6 rounded-xl bg-[#121a22] text-center">
       <img src="/Image/AmaliahSmartschool.jpg" alt="Crypto Learning" class="card-img mx-auto mb-4 rounded-lg" />
       <h2 class="text-lg font-semibold mb-2">Amaliah Smartschool</h2>
