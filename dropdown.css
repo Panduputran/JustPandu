@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .overlay {
     display: none;
     position: fixed;
@@ -10,6 +12,8 @@
     align-items: center;
     z-index: 1000;
   }
+
+  
 
   
   
@@ -26,6 +30,18 @@
     max-height: 80vh; /* biar scroll muncul */
     overflow-y: auto;
     position: relative;
+  }
+
+  .dropdown-content h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .dropdown-content h2 span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    color: #00cc80;
   }
   
   

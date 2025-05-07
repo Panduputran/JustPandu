@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Panduptra.n</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="assets/hugeicons/hugeicons-font.css">
   <script src="main.js"></script>
+  <script src="script.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -29,7 +33,7 @@
   </a>
 
   <!-- Hamburger Button -->
-  <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+  <button id="menu-btn" class="burgerblock md:hidden text-white focus:outline-none">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M4 6h16M4 12h16M4 18h16" />
@@ -409,7 +413,7 @@
 <div id="overlay" class="overlay backdrop-blur-md ">
   <div id="dropdownContent" class="dropdown-content">
     <button id="closeBtn" class="close-btn">&times;</button>
-    <h2>My Certificate</h2>
+    <h2>My<span>Certificate</span></h2>
     <div class="dropdown-item">
       <img src="Certificate/GameJam+.jpg" alt="Sertifikat 1">
       <span>GameJam+ 2024</span>
