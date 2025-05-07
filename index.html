@@ -18,6 +18,7 @@
   />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dropdown.css">
 </head>
 
 <header class="navbar flex items-center justify-between px-8 py-6 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 bg-black/20">
@@ -229,7 +230,8 @@
     
       <h2 class="text-lg font-semibold mb-2">Certificate</h2>
       <p class="text-sm text-white/70 mb-4">See My Certificate</p>
-      <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition"><a href="certificate.html">See</a>
+      <button id="dropdownBtn" aria-expanded="false" class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
+        See
         
       </button>
     </div>
@@ -409,6 +411,43 @@
   </div>
 </section>
 -->
+
+<div id="overlay" class="overlay">
+  <div id="dropdownContent" class="dropdown-content">
+    <button id="closeBtn" class="close-btn">&times;</button>
+    <h2>Sertifikat Saya</h2>
+    <div class="dropdown-item">
+      <img src="Certificate/GameJam+.jpg" alt="Sertifikat 1">
+      <span>Sertifikat Web Development</span>
+    </div>
+    <div class="dropdown-item">
+      <img src="Certificate/GGJbogor2025.jpg" alt="Sertifikat 2">
+      <span>Sertifikat UI/UX Design</span>
+    </div>
+    <div class="dropdown-item">
+      <img src="Certificate/1000390623.jpg" alt="Sertifikat 3">
+      <span>Sertifikat Cybersecurity</span>
+    </div>
+
+    <div class="dropdown-item">
+      <img src="Certificate/1000390623.jpg" alt="Sertifikat 3">
+      <span>Sertifikat Cybersecurity</span>
+    </div>
+
+    <div class="dropdown-item">
+      <img src="Certificate/1000390623.jpg" alt="Sertifikat 3">
+      <span>Sertifikat Cybersecurity</span>
+    </div>
+
+    <div class="dropdown-item">
+      <img src="Certificate/1000390623.jpg" alt="Sertifikat 3">
+      <span>Sertifikat Cybersecurity</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
 
 
 <!-- Section: Contact -->
