@@ -10,23 +10,28 @@
     align-items: center;
     z-index: 1000;
   }
+
+  
   
   .overlay.active {
     display: flex;
   }
   
   .dropdown-content {
-    background: white;
+    background: rgba(11, 11, 11, 0);
     padding: 20px;
     border-radius: 12px;
     max-width: 500px;
-    width: 100%;
+    width: 400px;
     max-height: 80vh; /* biar scroll muncul */
     overflow-y: auto;
     position: relative;
   }
   
+  
   .close-btn {
+    position: sticky;
+    z-index: 100;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -41,16 +46,15 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px 0;
+    margin: 15px;
     cursor: pointer;
-    border: 1px solid #ddd;
-    padding: 15px;
+    padding: 1px;
     border-radius: 10px;
     transition: background 0.3s;
   }
   
   .dropdown-item:hover {
-    background: #f0f0f0;
+    background: #b1b1b134;
   }
   
   .dropdown-item img {
@@ -64,6 +68,48 @@
   
   .dropdown-item span {
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
+  }
+
+  .close-btn {
+    margin-left: 300px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-self: flex-start;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 24px;
+    padding: 10px 17px;
+    cursor: pointer;
   }
   
+  
+
+    /* Custom Scrollbar WebKit */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #00ff9f;
+      border-radius: 10px;
+      border: 2px solid #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00cc80;
+    }
+
+    /* Untuk Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #00ff9f #1a1a1a;
+    }

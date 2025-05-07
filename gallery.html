@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+  <header class="navbar flex items-center justify-between px-8 py-6 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 bg-black/20">
+    <!-- Logo -->
+    <a href="#" class="logo text-white text-xl font-semibold flex items-center space-x-1">
+      <span class="text-[#00ff9f] font-bold">Pandu</span>
+      <span>Putra</span>
+    </a>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="block md:hidden text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-gray-800 text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:bg-transparent md:py-0 md:text-left md:w-auto">
+      <a href="#" class="block md:inline font-semibold">Home</a>
+      <a href="#" class="block md:inline hover:text-white">About</a>
+      <a href="#" class="block md:inline hover:text-white">Project</a>
+      <a href="#" class="block md:inline hover:text-white">License</a>
+      <a href="#" class="block md:inline hover:text-white">Gallery</a>
+      <p class="block md:hidden bg-[#00ff9f] text-black font-bold rounded-full px-6 py-2 mx-auto w-40">
+        Contact
+      </p>
+    </nav>
+
+    <!-- Contact button (desktop only) -->
+    <p class="hidden md:inline-block bg-[#00ff9f] text-black font-bold rounded-full px-8 py-3 hover:brightness-110">
+      Contact
+    </p>
+  </header>
+
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+            menuBtn.addEventListener('click', () => {
+              menu.classList.toggle('hidden');
+            });
+          </script>
+    
+</body>
+</html>
