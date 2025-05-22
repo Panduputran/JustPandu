@@ -4,18 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownContent = document.getElementById('dropdownContent');
     const closeBtn = document.getElementById('closeBtn');
   
-    function openDropdown() {
-      overlay.classList.add('active');
-      dropdownBtn.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-  
-    function closeDropdown() {
-      overlay.classList.remove('active');
-      dropdownBtn.setAttribute('aria-expanded', 'false');
-      dropdownBtn.focus();
-      document.body.style.overflow = '';
-    }
+   function openDropdown() {
+  overlay.classList.add('active');
+  overlay.classList.remove('closing');
+  dropdownBtn.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDropdown() {
+  overlay.classList.add('closing');
+  overlay.classList.remove('active');
+  dropdownBtn.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+
+  // Tunggu animasi selesai baru sembunyikan
+  setTimeout(() => {
+    overlay.classList.remove('closing');
+  }, 300); // waktu sesuai dengan transition CSS
+}
+
   
     dropdownBtn.addEventListener('click', openDropdown);
     closeBtn.addEventListener('click', closeDropdown);
