@@ -18,7 +18,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: white;
-  background-color: #0c0f17;
+  background-color: #0c0f17 ;
 
   background: 
     radial-gradient(ellipse at 30% 30%, #181A1F, transparent 60%),
@@ -79,7 +79,7 @@ body::before {
 .logo span {
   font-weight: 550;
   font-size: 24px;
-   background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+   background: linear-gradient(to right, #06b6d4, #3b82f6);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -136,13 +136,13 @@ body::before {
 }
 
 /* Posisi acak ikon */
-.icon-background i:nth-child(1) { color: red; top: 10%; left: 40%; }
+.icon-background i:nth-child(1) { top: 10%; left: 40%; }
 .icon-background i:nth-child(2) { top: 30%; left: 15%; }
-.icon-background i:nth-child(3) { color: yellow; top: 50%; left: 80%; }
+.icon-background i:nth-child(3) { top: 50%; left: 80%; }
 .icon-background i:nth-child(4) { top: 70%; left: 25%; }
-.icon-background i:nth-child(5) {  top: 20%; left: 65%; }
+.icon-background i:nth-child(5) { top: 20%; left: 65%; }
 .icon-background i:nth-child(6) { top: 80%; left: 50%; }
-.icon-background i:nth-child(7) { color: #803196; top: 60%; left: 10%; }
+.icon-background i:nth-child(7) { top: 60%; left: 10%; }
 .icon-background i:nth-child(8) { top: 40%; left: 40%; }
 
 /* Animasi lembut melayang */
@@ -190,7 +190,7 @@ body::before {
 
 .home-content h1 span {
 
-  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -278,7 +278,7 @@ body::before {
 
 .home .btn-group a:first-child {
   padding: 1rem 2.5rem;
-  background: #101218 ;
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
   border-radius: 3rem;
   font-size: 1.4rem;
   color: white;
@@ -453,7 +453,7 @@ body::before {
   padding: 1.5rem;
   border-radius: 1rem;
   border: 2px solid transparent;
-  color: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  color: linear-gradient(to right, #06b6d4, #3b82f6);
   font-weight: 600;
   gap: 0.5rem;
   transition: all 0.3s ease;
@@ -468,7 +468,7 @@ body::before {
 
 .card-btn i {
   font-size: 1.5rem;
-  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -485,7 +485,7 @@ body::before {
   background-color: #181A1F;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 255, 159, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 92, 251, 0.063);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -508,12 +508,12 @@ body::before {
 
 .card button {
   background-color: transparent;
-  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background:  linear-gradient(to right, #06b6d4, #3b82f6);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   
-  border: 2px solid #94c3f4;
-  color: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  border: 2px solid #3b82f6;
+  color:  linear-gradient(to right, #06b6d4, #3b82f6);
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;

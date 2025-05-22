@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="dropdown.css">
 </head>
 
-<header class="navbar flex items-center justify-between px-8 py-6 shadow-md fixed top-0 left-0 w-full z-50 bg-[#181A1F] ">
+<header class="navbar flex items-center justify-between px-8 py-6 shadow-md fixed top-0 left-0 w-full z-50 bg-[#101218] ">
   <!-- Logo -->
   <a href="#" class="logo text-white text-xl font-semibold flex items-center space-x-1" style="font-size: 24px;">
     Just <Span>Pandu</Span>
@@ -46,7 +46,7 @@
 
 
     <!-- Navigation Menu -->
-    <nav id="menu" class="transform transition duration-300 ease-in-out origin-top scale-y-0 opacity-0 invisible flex-col absolute top-full left-0 w-full bg-[#181a1fe2] text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:py-0 md:text-left md:w-auto md:scale-y-100 md:opacity-100 md:visible">
+    <nav id="menu" class="transform transition duration-300 ease-in-out origin-top scale-y-0 opacity-0 invisible flex-col absolute top-full left-0 w-full bg-[#101218d3] text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:py-0 md:text-left md:w-auto md:scale-y-100 md:opacity-100 md:visible">
       <a href="#about" class="block md:inline hover:text-white">About</a>
       <a href="#project" class="block md:inline hover:text-white">Project</a>
       <a href="#license" class="block md:inline hover:text-white">License</a>
@@ -119,13 +119,13 @@ menuBtn.addEventListener("click", () => {
         Welcome To My Website<br>
       </p>
       <div class="social-icons fade-in delay-4">
-        <a href="https://www.linkedin.com/in/pandu-putra-nurasih-404a52331/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.linkedin.com/in/pandu-putra-nurasih-404a52331/"><i class=' bx bxl-linkedin'></i></a>
         <a href="#"><i class='bx bxl-github'></i></a>
         <a href="https://www.instagram.com/panduptra.n/"><i class='bx bxl-instagram'></i></a>
         <a href="#"><i class='bx bxl-youtube'></i></a>
       </div>
       <div class="btn-group fade-in delay-5">
-        <a href="document/CV Pandu PDF.pdf" class="btn" download="document/CV Pandu PDF.pdf">Download CV</a>
+        <a href="document/CV Pandu PDF.pdf" class="btn bg-linear-to-r from-cyan-500 to-blue-500" download="document/CV Pandu PDF.pdf">Download CV</a>
         <a href="#contact">Contact Me</a>
       </div>
     </div>
@@ -241,7 +241,7 @@ menuBtn.addEventListener("click", () => {
       <img src="/Image/Fluentix 16.png" alt="Crypto Learning" class="card-img mx-auto mb-4 rounded-lg" />
       <h2 class="text-lg font-semibold mb-2">Fluentix</h2>
       <p class="text-sm text-white/70 mb-4">Coming Soon</p>
-      <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
+      <button class="border font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
         Go To Project
       </button>
     </div>
@@ -397,12 +397,15 @@ menuBtn.addEventListener("click", () => {
 
 
 <!-- Section: Contact -->
-<section id="contact" class="contact-section relative z-10 py-20 px-6 md:px-20 bg-[#0f1617]">
-  <div class="max-w-6xl mx-auto bg-[#0f1617] rounded-lg p-10 md:p-16 flex flex-col md:flex-row gap-12 md:gap-24">
+<section id="contact" class="contact-section relative z-10 py-20 px-6 md:px-20 bg-[#101218]">
+  <div class="max-w-6xl mx-auto bg-[#101218] rounded-lg p-10 md:p-16 flex flex-col md:flex-row gap-12 md:gap-24">
     
     <!-- Left Side -->
     <div class="flex flex-col justify-center flex-1 max-w-lg">
-      <h2 class="text-[#00ffb0] font-extrabold text-2xl md:text-3xl leading-tight mb-4">
+      <h2 class="font-extrabold text-2xl md:text-3xl leading-tight mb-4" style="font-size: 24px;
+   background: linear-gradient(to right, #06b6d4, #3b82f6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;">
         Start Collaborating With Me. 
       </h2>
       <p class="text-[#8a8f8f] text-sm md:text-base leading-relaxed max-w-md">
@@ -443,7 +446,7 @@ menuBtn.addEventListener("click", () => {
 
       <button
         type="submit"
-        class="bg-[#00ffb0] text-black font-extrabold text-xs py-3 rounded-full w-max px-8 hover:brightness-110 transition"
+        class="bg-linear-to-r from-cyan-500 to-blue-500 text-black font-extrabold text-xs py-3 rounded-full w-max px-8 hover:brightness-110 transition"
       >
         Send Message
       </button>
