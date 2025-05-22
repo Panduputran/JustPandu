@@ -1,3 +1,17 @@
+
+:root {
+  --bg-color: #101218;
+  --second-bg-color: #101218;
+  --text-color: rgba(255, 255, 255, 0.792);
+  --main-color: #1287E8;
+  --second-color: #1287E8;
+  --third-color: #5e6460;
+  --fourth-color: #84ff00;
+  --five-color: #f30000;
+  --six-color: #ddb852;
+  --seven-color: rgba(0, 0, 0, 0.792);
+}
+
 body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
@@ -18,8 +32,6 @@ body {
 }
 
 
-
-
 body::before {
   content: "";
   position: absolute;
@@ -37,18 +49,35 @@ body::before {
   100% { transform: translate(-10px, -10px); }
 }
 
-:root {
-  --bg-color: #101218;
-  --second-bg-color: #101218;
-  --text-color: rgba(255, 255, 255, 0.792);
-  --main-color: #1287E8;
-  --second-color: #1287E8;
-  --third-color: #5e6460;
-  --fourth-color: #84ff00;
-  --five-color: #f30000;
-  --six-color: #ddb852;
-  --seven-color: rgba(0, 0, 0, 0.792);
+#menu-btn svg path {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+  transform-box: fill-box; /* supaya transform origin benar */
 }
+
+/* Saat aktif - berubah jadi X */
+#menu-btn.active #line1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+#menu-btn.active #line2 {
+  opacity: 0;
+  transform: translateX(-20px); /* geser supaya fade lebih smooth */
+}
+
+#menu-btn.active #line3 {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Saat tidak aktif, reset semua */
+#menu-btn:not(.active) #line1,
+#menu-btn:not(.active) #line2,
+#menu-btn:not(.active) #line3 {
+  transform: none;
+  opacity: 1;
+}
+
+
 header .logo span {
   font-weight: 550;
   font-size: 35px;
@@ -680,4 +709,5 @@ header .logo span {
   .contact-section form textarea {
     font-family: 'Poppins', sans-serif;
   }
+  
   

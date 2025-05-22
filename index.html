@@ -11,7 +11,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="assets/hugeicons/hugeicons-font.css">
-  <title style="background-image: url(images/Logo.png);">pamedia.id</title>
+  <title style="background-image: url(images/Logo.png);"></title>
   <link rel="icon" type="image/x-icon" href="Image/Logo.png">
   <script src="main.js"></script>
   <script src="script.js"></script>
@@ -34,18 +34,18 @@
     <span>Putra</span>
   </a>
 
-  <!-- Hamburger Button -->
-  <button id="menu-btn" class="burgerblock md:hidden text-white focus:outline-none">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
+  <button id="menu-btn" class="burgerblock md:hidden text-white focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path id="line1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16" />
+    <path id="line2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
+    <path id="line3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16" />
+  </svg>
+</button>
+
 
 
     <!-- Navigation Menu -->
-    <nav id="menu" class="hidden flex-col absolute top-full left-0 w-full bg-[#101218] text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row  md:py-0 md:text-left md:w-auto">
-      <a href="#home" class="block md:inline font-semibold">Home</a>
+    <nav id="menu" class="transform transition duration-300 ease-in-out origin-top scale-y-0 opacity-0 invisible flex-col absolute top-full left-0 w-full bg-[#101218] text-white text-center space-y-4 py-4 md:space-y-0 md:space-x-8 md:static md:flex md:flex-row md:py-0 md:text-left md:w-auto md:scale-y-100 md:opacity-100 md:visible">
       <a href="#about" class="block md:inline hover:text-white">About</a>
       <a href="#project" class="block md:inline hover:text-white">Project</a>
       <a href="#license" class="block md:inline hover:text-white">License</a>
@@ -62,14 +62,35 @@
   </header>
   
   <script>
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-  
-    menuBtn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
-  </script>
-  
+  const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+
+  if (menu.classList.contains("scale-y-0")) {
+    // Buka menu dengan animasi
+    menu.classList.remove("scale-y-0", "opacity-0", "invisible");
+    menu.classList.add("scale-y-100", "opacity-100", "visible");
+    menuBtn.setAttribute("aria-expanded", "true");
+  } else {
+    // Tutup menu dengan animasi, beri delay untuk sembunyikan after animasi
+    menu.classList.remove("scale-y-100", "opacity-100", "visible");
+    menu.classList.add("scale-y-0", "opacity-0");
+    menuBtn.setAttribute("aria-expanded", "false");
+
+    // Setelah animasi 300ms selesai, sembunyikan pakai invisible supaya gak klikable
+    setTimeout(() => {
+      if(menu.classList.contains("scale-y-0")) {
+        menu.classList.add("invisible");
+      }
+    }, 300);
+  }
+});
+
+
+</script>
+
 
   <section class="home fade-bottom" id="home">
     <!-- Background icons layer -->
