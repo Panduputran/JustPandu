@@ -1,7 +1,7 @@
 
 :root {
-  --bg-color: #101218;
-  --second-bg-color: #101218;
+  --bg-color: #181A1F;
+  --second-bg-color: #181A1F;
   --text-color: rgba(255, 255, 255, 0.792);
   --main-color: #1287E8;
   --second-color: #1287E8;
@@ -21,11 +21,10 @@ body {
   background-color: #0c0f17;
 
   background: 
-    radial-gradient(ellipse at 30% 30%, #101218, transparent 60%),
+    radial-gradient(ellipse at 30% 30%, #181A1F, transparent 60%),
     radial-gradient(circle at 70% 20%, rgba(16, 131, 255, 0.12), transparent 50%),
-    radial-gradient(circle at 80% 80%, #101218, transparent 65%),
+    radial-gradient(circle at 80% 80%, #181A1F, transparent 65%),
     linear-gradient(145deg, #10131a 0%, #111720 40%, #0e121a 100%);
-    
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: screen, screen, screen, normal;
@@ -77,11 +76,15 @@ body::before {
   opacity: 1;
 }
 
-
-header .logo span {
+.logo span {
   font-weight: 550;
-  font-size: 35px;
+  font-size: 24px;
+   background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
+
 
 /* Navbar */
 .navbar a {
@@ -186,8 +189,15 @@ header .logo span {
 }
 
 .home-content h1 span {
-  color: var(--second-color);
+
+  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
+
+
+
 
 .home-content h3 {
   margin: 1.5rem 0;
@@ -439,11 +449,11 @@ header .logo span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #121a22;
+  background-color: #181A1F;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 2px solid transparent;
-  color: white;
+  color: linear-gradient(90deg, #94c3f4, #a5a5a5);
   font-weight: 600;
   gap: 0.5rem;
   transition: all 0.3s ease;
@@ -458,6 +468,9 @@ header .logo span {
 
 .card-btn i {
   font-size: 1.5rem;
+  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Info Cards */
