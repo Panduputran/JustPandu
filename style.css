@@ -407,8 +407,8 @@ body::before {
 }
 
 .project-section .btn-small {
-  background-color: #00ff9f;
-  color: black;
+  background-color: #181A1F;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
@@ -482,7 +482,7 @@ body::before {
 }
 
 .card {
-  background-color: #121a22;
+  background-color: #181A1F;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 255, 159, 0.1);
@@ -508,8 +508,12 @@ body::before {
 
 .card button {
   background-color: transparent;
-  border: 2px solid #00ff9f;
-  color: #00ff9f;
+  background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  border: 2px solid #94c3f4;
+  color: linear-gradient(90deg, #94c3f4, #a5a5a5);
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;

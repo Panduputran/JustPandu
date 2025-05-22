@@ -41,7 +41,9 @@
   .dropdown-content h2 span {
     font-family: "Roboto", sans-serif;
     font-weight: 800;
-    color: #00cc80;
+     background: linear-gradient(90deg, #94c3f4, #a5a5a5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
   
   
@@ -115,17 +117,13 @@
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #00ff9f;
+      background: linear-gradient(90deg, #94c3f4, #a5a5a5);
       border-radius: 10px;
       border: 2px solid #1a1a1a;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #00cc80;
+      background: linear-gradient(90deg, #94c3f4, #a5a5a5);
     }
 
-    /* Untuk Firefox */
-    * {
-      scrollbar-width: thin;
-      scrollbar-color: #00ff9f #1a1a1a;
-    }
+  
