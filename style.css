@@ -136,13 +136,13 @@ body::before {
 }
 
 /* Posisi acak ikon */
-.icon-background i:nth-child(1) { top: 10%; left: 40%; }
+.icon-background i:nth-child(1) { color: red; top: 10%; left: 40%; }
 .icon-background i:nth-child(2) { top: 30%; left: 15%; }
-.icon-background i:nth-child(3) { top: 50%; left: 80%; }
+.icon-background i:nth-child(3) { color: yellow; top: 50%; left: 80%; }
 .icon-background i:nth-child(4) { top: 70%; left: 25%; }
 .icon-background i:nth-child(5) {  top: 20%; left: 65%; }
 .icon-background i:nth-child(6) { top: 80%; left: 50%; }
-.icon-background i:nth-child(7) { top: 60%; left: 10%; }
+.icon-background i:nth-child(7) { color: #803196; top: 60%; left: 10%; }
 .icon-background i:nth-child(8) { top: 40%; left: 40%; }
 
 /* Animasi lembut melayang */
