@@ -168,7 +168,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 6rem 2rem;
   margin-top: 100px;
 }
@@ -176,7 +176,7 @@ body::before {
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   max-width: 900px;
 }
@@ -317,7 +317,7 @@ body::before {
 /* Responsive Breakpoints */
 @media (max-width: 992px) {
   .home-content h1 {
-    font-size: 3.5rem;
+    font-size: 3.rem;
   }
 
   .home-content h3 {
@@ -336,6 +336,8 @@ body::before {
 @media (max-width: 600px) {
   .home-content h1 {
     font-size: 2.5rem;
+    text-align: left;
+  
   }
 
   .home-content h3 {
