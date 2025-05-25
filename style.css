@@ -134,7 +134,7 @@ body::before {
 .icon-background i {
   position: absolute;
   font-size: 4rem;
-  color: #101218;
+  color: #222631;
   animation: floatIcon 20s linear infinite;
 }
 
