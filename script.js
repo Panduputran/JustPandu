@@ -55,3 +55,25 @@ function closeDropdown() {
     });
   });
   
+
+  function createOrbit(iconClass) {
+  const orbit = document.createElement('div');
+  orbit.classList.add('orbit');
+  orbit.style.width = `${random(200, 350)}px`;
+  orbit.style.height = orbit.style.width;
+  orbit.style.top = `${random(5, 75)}%`;
+  orbit.style.left = `${random(5, 85)}%`;
+  orbit.style.animationDuration = `${random(120, 250)}s`; // lebih lambat
+
+  const path = document.createElement('span');
+  path.classList.add('orbit-path');
+
+  const icon = document.createElement('i');
+  icon.className = iconClass;
+  icon.style.animation = 'iconSpin 15s linear infinite'; // Tambahkan animasi putaran icon
+
+  orbit.appendChild(path);
+  orbit.appendChild(icon);
+
+  return orbit;
+}

@@ -16,6 +16,7 @@
   <link rel="icon" type="image/x-icon" href="Image/Logo.png">
   <script src="main.js"></script>
   <script src="script.js"></script>
+   <script src="orbit.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -31,7 +32,7 @@
 <header class="navbar flex items-center justify-between px-8 py-6 shadow-md fixed top-0 left-0 w-full z-50 bg-[#0b0d0e] ">
   <!-- Logo -->
   <a href="#" class="logo text-white text-xl font-semibold flex items-center space-x-1" style="font-size: 24px;">
-    Its <Span>pandu_</Span>
+     pandu<Span>putra_</Span>
   
   </a>
 
@@ -91,10 +92,7 @@ menuBtn.addEventListener("click", () => {
 
 
 </script>
-
-
-  <section class="home fade-bottom" id="home">
-    <!-- Background icons layer -->
+<!-- Background icons layer 
     <div class="icon-background">
       <i class="fab fa-html5"></i>
       <i class="fab fa-css3-alt"></i>
@@ -104,7 +102,34 @@ menuBtn.addEventListener("click", () => {
       <i class="fab fa-python"></i>
       <i class="fab fa-github"></i>
       <i class="fab fa-figma"></i>
-    </div>
+    </div>  
+    -->
+
+
+
+  <section class="home fade-bottom" id="home">
+
+    
+    
+<div class="icon-background">
+  <canvas id="connectionCanvas"></canvas>
+  <div class="wave-group" id="wave1">
+     <div class="orbit"><span class="orbit-path"></span><i class="fab fa-html5"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-css3-alt"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-js-square"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-react"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-git-alt"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-python"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-github"></i></div>
+  <div class="orbit"><span class="orbit-path"></span><i class="fab fa-figma"></i></div>
+  </div>
+</div>
+
+
+
+   <!-- Background orbit icons -->
+
+
   
     <!-- Foreground content -->
     <div class="home-content fade-in-left delay-5">
@@ -112,9 +137,9 @@ menuBtn.addEventListener("click", () => {
       <h1>I'm <span style="font-style: normal;">Pandu</span></h1>
       <h3 class="fade-in delay-1" style="font-style: italic;">I'm a 
         <span style="--i:4;" data-text="Frontend Developer">Frontend Developer</span>
-        <span style="--i:3;" data-text="UI / Ux Designer">UI / Ux Designer</span>
-        <span style="--i:2;" data-text="Game Developer">Game Developer</span>
-        <span style="--i:1;" data-text="Photographer">Photographer</span>
+        <span style="--i:3;" data-text="Game Developer">Game Developer</span>
+        <span style="--i:2;" data-text="Game Developer">Frontend Developer</span>
+        <span style="--i:1;" data-text="Photographer">Game Developer</span>
       </h3>
       <p class="fade-in delay-3">
        Welcome To My World, Discover projects, passion and possibilities, Here’s my story.<br>
@@ -180,6 +205,8 @@ menuBtn.addEventListener("click", () => {
     </button>
   </div>
 
+  <!--
+
    <div class="box-container">
     <div class="box big">
       <img src="Image/Foto.jpg" alt="Me In A Nutshell" />
@@ -205,6 +232,8 @@ menuBtn.addEventListener("click", () => {
         p <br>
         p
       </p>
+
+    -->
       <!-- You can add your icons here -->
     </div>
   </div>
@@ -280,7 +309,7 @@ menuBtn.addEventListener("click", () => {
       <img src="/Image/Lunna Hijab.jpg" alt="Crypto Learning" class="card-img mx-auto mb-4 rounded-lg" />
       <h2 class="text-lg font-semibold mb-2">Lunna Hijab</h2>
       <p class="text-sm text-white/70 mb-4">Temukan gaya terbaikmu dengan koleksi hijab modern dari Hijab Elegan.</p>
-      <button class="border border-[#00b87c] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
+      <button class="border border-[#00b87] text-[#00b87c] font-semibold rounded-full px-6 py-2 hover:bg-[#00b87c]/10 transition">
         Go To Project
       </button>
     </div>
